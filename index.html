@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEasy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6600, #ff3300);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+    .search-bar {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .search-bar input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 220px;
+      font-size: 15px;
+    }
+    .search-bar button {
+      padding: 10px 16px;
+      background-color: white;
+      color: #ff3300;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .search-bar button:hover {
+      background-color: #ffe6e0;
+    }
+    .categories {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .category {
+      background: #ff6600;
+      color: white;
+      padding: 8px 16px;
+      margin-right: 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .category:hover {
+      background: #e65c00;
+    }
+    h2.section-title {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: 24px;
+      color: #ff3300;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    .product {
+      background: white;
+      width: 270px;
+      margin: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-6px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-info h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .product-info p {
+      margin: 5px 0;
+      color: #444;
+      font-weight: bold;
+    }
+    .product-info a button {
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product-info a button:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ShopEasy</h1>
+    <p>Your Daily Deals in One Place</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  </header>
+
+  <div class="categories">
+    <div class="category">All</div>
+    <div class="category">Watches</div>
+    <div class="category">T-Shirts</div>
+    <div class="category">Bags</div>
+    <div class="category">Headphones</div>
+  </div>
+
+  <h2 class="section-title">Best Deals Today</h2>
+
+  <div class="container" id="productList">
+    <div class="product">
+      <img src="https://i.imgur.com/abcd123.jpg" alt="Watch">
+      <div class="product-info">
+        <h3>Stylish Watch</h3>
+        <p>৳1200</p>
+        <a href="https://example.com/watch-link" target="_blank">
+          <button>Buy Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/xyz456.jpg" alt="Earphone">
+      <div class="product-info">
+        <h3>Gaming Earphone</
