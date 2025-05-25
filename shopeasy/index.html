@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopEasy - Best Deals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShopEasy</h1>
+    <p>Your Daily Deals in One Place</p>
+    <input type="text" id="searchBox" placeholder="Search products...">
+    <button onclick="searchProducts()">Search</button>
+  </header>
+
+  <nav>
+    <button onclick="filterCategory('All')">All</button>
+    <button onclick="filterCategory('Watches')">Watches</button>
+    <button onclick="filterCategory('T-Shirts')">T-Shirts</button>
+    <button onclick="filterCategory('Bags')">Bags</button>
+  </nav>
+
+  <section id="products"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
